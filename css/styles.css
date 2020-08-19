@@ -1,67 +1,161 @@
-#title{
-  background-color: #ff4c68;
-  color: white;
-  }
-h1 {
-  font-family: 'Montserrat';
-  font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-body{
-  font-family: 'Montserrat';
-}
-.container-fluid{
-   padding: 3% 15%;
-    /* height: 600px; */
-  }
-/* Navigation Bar   */
-.navbar{
-  padding: 0 0 4.5rem 0;
-}
-.navbar-brand{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-.nav-link{
-  margin-left: 18px;
-  font-size: 1.2rem;
-}
-/* Download Button */
-.donwload-btn{
-  margin: 5% 3% 5% 0;
-}
-/* Title Image */
-.iphonedog{
-  transform: rotate(25deg);
-  width: 60%;
-}
-/* Features */
-#features{
+body {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-.container-features{
-  padding: 3% 15%;
 
-  /* margin-top: 5rem; */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }
-h3{
-  font-weight: 700;
+
+/* headings */
+
+.big-heading{
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.section-heading{
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* containers */
+
+.container-fluid {
+  padding: 5% 15%;
+}
+
+/* sections */
+
+.coloured-section{
+  background-color: #ff4c68;
+  color: white;
+}
+.white-section{
+  background-color: #fff;
+}
+
+/* menu */
+.navbar {
+  margin-bottom: 50px;
+  padding: 8px 0;
+}
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav-link {
+  margin-right: 20px;
+}
+
+/* title section */
+
+#title .container-fluid{
+  padding: 3% 15% 5%;
+  text-align: left;
+}
+.iphone {
+  transform: rotate(25deg);
+  width: 300px;
+  position: absolute;
+  right: 25%;
+}
+.downloadbtn {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* features section */
+
+#features {
+  position: relative;
+}
+
+.feature-title{
+  font-weight: bold;
   font-size: 1.5rem;
 }
-.red-icon{
+.redicon {
   color: #ef8172;
-  font-size: 4rem;
-  padding-bottom: 1rem;
+  font-size: 50px;
+  margin: 15px;
 }
-.red-icon:hover{
-  color: #ff4c88;
+.redicon:hover {
+  color: #ff4c68;
 }
-.col-features{
-  padding: 10% 5%;
+.featspace {
+  padding: 5%;
 }
-.pgrey{
-    color: #8f8f8f;
-    font-weight: 500;
+.gray {
+  color: #8f8f8f;
+}
+
+/* testimonials section */
+
+#testimonials {
+  background-color: #ef8172;
+}
+.testimonial-image {
+  border-radius: 50%;
+  width: 10%;
+  padding: 20px;
+}
+.testimonial-text{
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* press section */
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* pricing section */
+
+#pricing {
+  padding: 100px;
+}
+.price-text{
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-col {
+  padding: 3% 2%;
+}
+.plan-title{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* call to action section */
+
+/* contact section */
+
+.s-icon {
+  padding: 30px 10px;
+}
+
+/* media changes */
+
+@media (max-width: 1028px) {
+  .iphone {
+    transform: rotate(0deg);
+    position: static;
+    right: 0%;
+  }
+
+  #title {
+    text-align: center;
+  }
 }
